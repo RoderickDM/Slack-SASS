@@ -1,0 +1,51 @@
+.header{
+    background: $clr-primary;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .branding{
+        display:flex;
+        align-items: center;
+        gap: 2rem;
+        img{
+            width:4rem;
+        }
+        h3{
+            color:$clr-light;
+            font-size:3rem;
+        }
+        ul{
+            display: none;
+        }
+    }
+    &__nav{
+        display: none;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        a{
+            i{
+                color:$clr-light;
+            }
+        }
+        .toggle__menu{
+            span{
+                width:3rem;
+                height: 0.2rem;
+                background-color: $clr-light;
+                display: block;
+                border-radius:5rem;
+                &:nth-child(2){
+                    margin: .3rem 0;
+                }
+            }
+        }
+        &__btn{
+            display: none;
+        }
+    }
+}

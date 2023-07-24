@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+/*----COMPONENTS----*/
+.header {
+  background: hsl(294, 54%, 27%);
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .branding {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .branding img {
+  width: 4rem;
+}
+.header .branding h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+}
+.header .branding ul {
+  display: none;
+}
+.header__nav {
+  display: none;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__actions a i {
+  color: hsl(0, 0%, 100%);
+}
+.header__actions .toggle__menu span {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: hsl(0, 0%, 100%);
+  display: block;
+  border-radius: 5rem;
+}
+.header__actions .toggle__menu span:nth-child(2) {
+  margin: 0.3rem 0;
+}
+.header__actions__btn {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

@@ -15,6 +15,8 @@
             font-size: 4.1rem;
             font-weight: 700;
             color: $clr-light;
+            line-height: 1;
+            margin-bottom: 1rem;
             span{
                 color:#ffa700;
             }
@@ -22,6 +24,10 @@
         p{
             color: $clr-light;
             margin-bottom:2rem;
+            font-weight: 700;
+            &:last-child{
+                display: none;
+            }
         }
         &__btn{
             display:grid;
@@ -55,10 +61,9 @@
         bottom:0;
     }
     @include mediaQuery($break-lg){
+        height:unset;
         &__wrapper{
-            display: grid;
-            grid-template-columns: 2fr 2fr;
-            grid-gap:10rem;
+            @include gridEven(2,13rem);
             align-items: center;
         }
         &__text{
@@ -66,10 +71,18 @@
             h1{
                 font-size:5.5rem;
                 font-weight:700;
+                margin-bottom: 2rem;
+            }
+            p{
+                margin-bottom: 3rem;
+                &:last-child{
+                    display:unset;
+                }
             }
             &__btn{
                 display: grid;
                 grid-template-columns: 2fr 2fr;
+                margin-bottom: 3rem;
                 a{
                     display:flex;
                     justify-content: center;
@@ -78,7 +91,6 @@
                     img{
                         @include imgFit(4rem, 4rem);
                         padding: 1rem;
-                        // width: 3rem;
                         position: absolute;
                         left:0;
                         background: $clr-light;
@@ -96,6 +108,83 @@
         video{
             position:unset;
             @include imgFit(120%, 400px);
+        }
+    }
+}
+
+/*----Feautured Companies------*/
+.featured{
+    padding:5rem 0;
+    background: $clr-fwhite;
+    &__title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    &__company{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+        img{
+            
+            &#air{
+                width:12rem
+            }
+            &#nasa{
+                width: 7rem;
+            }
+            &#target{
+                width: 5rem;
+            }
+            &#nyt{
+                width: 20rem;
+            }
+            &#ets{
+                width: 8rem;
+            }
+        }
+    }
+    @include mediaQuery($break-lg){
+        padding-top:2rem;
+        &__company{
+            gap:8rem;
+        }
+    }
+}
+
+/*----About Slack------*/
+.about{
+    background: $clr-fwhite;
+    padding-top:2rem;
+    padding-bottom:3rem;
+    &__content{
+        margin-bottom: 4rem;
+        video{
+            width:40rem;
+            &#second{
+                float:right;
+                right:0;
+            }
+        }
+    }
+    &__text{
+        padding:1.5rem .1rem;
+        margin:0 2rem;
+        h2{
+            font-size: 3rem;
+            font-weight: 750;
+            line-height: 1.1;
+        }
+        p{
+            font-weight: 650;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+        }
+        a{
+            font-weight: 700;
         }
     }
 }

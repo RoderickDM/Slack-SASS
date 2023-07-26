@@ -305,6 +305,8 @@ body {
   font-size: 4.1rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 .banner__text h1 span {
   color: #ffa700;
@@ -312,6 +314,10 @@ body {
 .banner__text p {
   color: hsl(0, 0%, 100%);
   margin-bottom: 2rem;
+  font-weight: 700;
+}
+.banner__text p:last-child {
+  display: none;
 }
 .banner__text__btn {
   display: grid;
@@ -349,10 +355,13 @@ body {
   bottom: 0;
 }
 @media screen and (min-width: 940px) {
+  .banner {
+    height: unset;
+  }
   .banner__wrapper {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13rem;
     align-items: center;
   }
   .banner__text {
@@ -361,10 +370,18 @@ body {
   .banner__text h1 {
     font-size: 5.5rem;
     font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .banner__text p {
+    margin-bottom: 3rem;
+  }
+  .banner__text p:last-child {
+    display: unset;
   }
   .banner__text__btn {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    margin-bottom: 3rem;
   }
   .banner__text__btn a {
     display: flex;
@@ -395,4 +412,80 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+/*----Feautured Companies------*/
+.featured {
+  padding: 5rem 0;
+  background: hsl(34, 42%, 93%);
+}
+.featured__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.featured__company {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.featured__company img#air {
+  width: 12rem;
+}
+.featured__company img#nasa {
+  width: 7rem;
+}
+.featured__company img#target {
+  width: 5rem;
+}
+.featured__company img#nyt {
+  width: 20rem;
+}
+.featured__company img#ets {
+  width: 8rem;
+}
+@media screen and (min-width: 940px) {
+  .featured {
+    padding-top: 2rem;
+  }
+  .featured__company {
+    gap: 8rem;
+  }
+}
+
+/*----About Slack------*/
+.about {
+  background: hsl(34, 42%, 93%);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.about__content {
+  margin-bottom: 4rem;
+}
+.about__content video {
+  width: 40rem;
+}
+.about__content video#second {
+  float: right;
+  right: 0;
+}
+.about__text {
+  padding: 1.5rem 0.1rem;
+  margin: 0 2rem;
+}
+.about__text h2 {
+  font-size: 3rem;
+  font-weight: 750;
+  line-height: 1.1;
+}
+.about__text p {
+  font-weight: 650;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.about__text a {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

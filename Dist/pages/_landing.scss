@@ -1,0 +1,101 @@
+.banner{
+    padding-top:8rem;
+    padding-bottom:5rem;
+    background: $clr-primary;
+    position: relative;
+    height:87vh;
+    overflow: hidden;
+    &__wrapper{
+        display:flex;
+        flex-direction: column;
+    }
+    &__text{
+        text-align: center;
+        h1{
+            font-size: 4.1rem;
+            font-weight: 700;
+            color: $clr-light;
+            span{
+                color:#ffa700;
+            }
+        }
+        p{
+            color: $clr-light;
+            margin-bottom:2rem;
+        }
+        &__btn{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-gap:1.1rem;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3rem;
+                img{
+                    @include imgFit(4rem, 4rem);
+                    padding: 1rem;
+                    position: absolute;
+                    left:0;
+                    background: $clr-light;
+                    margin-left: .4rem;
+                    border-radius: .4rem;
+                    
+               }
+               &:last-child{
+                background:hsl(217.42,89%,60.78%);
+                color: $clr-light;
+               }
+            }
+        }
+    }
+    video{
+        @include imgFit(100%, 400px);
+        position: absolute;
+        bottom:0;
+    }
+    @include mediaQuery($break-lg){
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-gap:10rem;
+            align-items: center;
+        }
+        &__text{
+            text-align: left;
+            h1{
+                font-size:5.5rem;
+                font-weight:700;
+            }
+            &__btn{
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+                a{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3rem;
+                    img{
+                        @include imgFit(4rem, 4rem);
+                        padding: 1rem;
+                        // width: 3rem;
+                        position: absolute;
+                        left:0;
+                        background: $clr-light;
+                        margin-left: .4rem;
+                        border-radius: .4rem;
+                        
+                   }
+                   &:last-child{
+                    background:hsl(217.42,89%,60.78%);
+                    color: $clr-light;
+                   }
+                }
+            }
+        }
+        video{
+            position:unset;
+            @include imgFit(120%, 400px);
+        }
+    }
+}

@@ -34,6 +34,7 @@ body {
   position: relative;
   position: fixed;
   width: 100%;
+  z-index: 999;
   background: hsl(294, 54%, 27%);
 }
 .header .container {
@@ -43,7 +44,7 @@ body {
   background: transparent;
 }
 .header.white .container {
-  background: blue;
+  background: hsl(294, 54%, 27%);
   border-radius: 3rem;
   margin-top: 4rem;
   transition: 2s ease;
@@ -283,4 +284,115 @@ body {
   z-index: 999;
   transition: 0.5s ease;
   border: 1px solid hsl(0, 0%, 100%);
+}
+
+.banner {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: hsl(294, 54%, 27%);
+  position: relative;
+  height: 87vh;
+  overflow: hidden;
+}
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.banner__text {
+  text-align: center;
+}
+.banner__text h1 {
+  font-size: 4.1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.banner__text h1 span {
+  color: #ffa700;
+}
+.banner__text p {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+}
+.banner__text__btn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.1rem;
+}
+.banner__text__btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.banner__text__btn a img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  background: hsl(0, 0%, 100%);
+  margin-left: 0.4rem;
+  border-radius: 0.4rem;
+}
+.banner__text__btn a:last-child {
+  background: hsl(217.42, 89%, 60.78%);
+  color: hsl(0, 0%, 100%);
+}
+.banner video {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (min-width: 940px) {
+  .banner__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10rem;
+    align-items: center;
+  }
+  .banner__text {
+    text-align: left;
+  }
+  .banner__text h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+  }
+  .banner__text__btn {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .banner__text__btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .banner__text__btn a img {
+    width: 4rem;
+    height: 4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    background: hsl(0, 0%, 100%);
+    margin-left: 0.4rem;
+    border-radius: 0.4rem;
+  }
+  .banner__text__btn a:last-child {
+    background: hsl(217.42, 89%, 60.78%);
+    color: hsl(0, 0%, 100%);
+  }
+  .banner video {
+    position: unset;
+    width: 120%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=main.css.map */

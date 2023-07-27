@@ -1,0 +1,63 @@
+$colors:(
+    'primary' : $clr-primary,
+    'light' : $clr-light,
+    'dprimary' : $clr-dprimary,
+    'fwhite' : $clr-fwhite,
+    'dark' : $clr-dark
+);
+
+@each $key, $val in $colors{
+    .text{
+        &--#{$key}{
+            color:$val;
+        }
+    }
+    .bg{
+        &--#{$key}{
+            background:$val;
+        }
+    }
+};
+
+$displays: none, block, flex, inline-block, inline-flex;
+
+@each $display in $displays{
+    .d{
+        &--#{$display}{
+            display:$display;
+        }
+    }
+};
+
+@for $i from 0 through 20{
+    .my{
+        &--#{$i}{
+            margin:$i+rem 0;
+        }
+    }
+    .mx{
+        &--#{$i}{
+            margin:0 $i+rem;
+        }
+    }
+    .m{
+        &--#{$i}{
+            margin:$i+rem;
+        }
+    }
+    .py{
+        &--#{$i}{
+            padding:$i+rem 0;
+        }
+    }
+    .px{
+        &--#{$i}{
+            padding:0 $i+rem;
+        }
+    }
+    .p{
+        &--#{$i}{
+            padding:$i+rem;
+        }
+    }
+};

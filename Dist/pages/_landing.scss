@@ -1,7 +1,7 @@
 .banner{
     padding-top:8rem;
     padding-bottom:5rem;
-    background: $clr-primary;
+    background: $clr-dprimary;
     position: relative;
     height:87vh;
     overflow: hidden;
@@ -281,6 +281,36 @@
                 h2{
                     font-size:6rem;
                 }
+            }
+        }
+    }
+}
+
+/*----Fourth Section-----*/
+.fourth{
+    &__wrapper{
+        background: $clr-light;
+        video{
+            @include imgFit(96%,20rem);
+            border-top-right-radius: 10rem;
+            border-bottom-right-radius: 10rem;
+        }
+    }
+    &__text{
+        h4{
+            padding:2rem;
+            font-size:2rem;
+            font-style: italic;
+        }
+        span{
+            font-weight: 550;
+        }
+        a{
+            color:hsl(206.07,52.59%,45.49%);
+        }
+        p{
+            &:last-child{
+                font-size: 1.2rem;
             }
         }
     }

@@ -46,8 +46,8 @@ body {
 .header.white .container {
   background: hsl(294, 54%, 27%);
   border-radius: 3rem;
-  margin-top: 4rem;
-  transition: 2s ease;
+  margin-top: 1rem;
+  transition: 1s ease;
 }
 .header__wrapper {
   display: flex;
@@ -472,6 +472,9 @@ body {
   float: right;
   right: 0;
 }
+.about__content video#desktop-vid {
+  display: none;
+}
 .about__text {
   padding: 1.5rem 0.1rem;
   margin: 0 2rem;
@@ -488,4 +491,31 @@ body {
 }
 .about__text a {
   font-weight: 700;
+}
+@media screen and (min-width: 940px) {
+  .about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15rem;
+  }
+  .about__content#hw-to-work {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about__content video {
+    display: none;
+  }
+  .about__content video#desktop-vid {
+    display: unset;
+    width: 60rem;
+    height: 40rem;
+  }
+  .about__text h2 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .about__text p {
+    text-align: justify;
+  }
 }/*# sourceMappingURL=main.css.map */

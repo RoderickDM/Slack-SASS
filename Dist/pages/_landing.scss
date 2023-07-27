@@ -168,6 +168,10 @@
                 float:right;
                 right:0;
             }
+            &#desktop-vid{
+                display:none;
+            }
+            
         }
     }
     &__text{
@@ -185,6 +189,33 @@
         }
         a{
             font-weight: 700;
+        }
+    }
+    @include mediaQuery($break-lg){
+        &__content{
+            @include centerAll;
+            gap:15rem;
+            &#hw-to-work{
+                display:flex;
+                flex-direction: row-reverse;
+            }
+            video{
+                display:none;
+                &#desktop-vid{
+                    display: unset;
+                    width:60rem;
+                    height:40rem;
+                }
+            }
+        }
+        &__text{
+            h2{
+                font-size: 4rem;
+                font-weight: 600;
+            }
+            p{
+                text-align: justify;
+            }
         }
     }
 }

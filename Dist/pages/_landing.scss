@@ -194,7 +194,7 @@
     @include mediaQuery($break-lg){
         &__content{
             @include centerAll;
-            gap:15rem;
+            gap:20rem;
             &#hw-to-work{
                 display:flex;
                 flex-direction: row-reverse;
@@ -210,11 +210,77 @@
         }
         &__text{
             h2{
-                font-size: 4rem;
+                font-size: 4.1rem;
                 font-weight: 600;
             }
             p{
                 text-align: justify;
+            }
+        }
+    }
+}
+
+/*----Third Section-----*/
+.third{
+    padding:5rem 0;
+    &__first{
+        text-align: center;
+        h3{
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+        p{
+            margin: 1.5rem 0;
+        }
+        &__btn{
+            display:flex;
+            flex-direction: column;
+            gap:1rem;
+        }
+    }
+    &__second{
+        padding:5rem 0;
+        &__item{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom:3rem;
+            h2{
+                font-size: 5rem;
+                color:$clr-primary;
+            }
+            p{
+                font-size: 1.3rem;
+                max-width: 15rem;
+            }
+        }
+    }
+    @include mediaQuery($break-lg){
+        &__first{
+            h3{
+                font-size: 4.5rem;
+            }
+            p{
+                font-weight:600;
+            }
+            &__btn{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__second{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap:25rem;
+            &__item{
+                h2{
+                    font-size:6rem;
+                }
             }
         }
     }

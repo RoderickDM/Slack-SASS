@@ -497,7 +497,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15rem;
+    gap: 20rem;
   }
   .about__content#hw-to-work {
     display: flex;
@@ -512,10 +512,72 @@ body {
     height: 40rem;
   }
   .about__text h2 {
-    font-size: 4rem;
+    font-size: 4.1rem;
     font-weight: 600;
   }
   .about__text p {
     text-align: justify;
+  }
+}
+
+/*----Third Section-----*/
+.third {
+  padding: 5rem 0;
+}
+.third__first {
+  text-align: center;
+}
+.third__first h3 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+.third__first p {
+  margin: 1.5rem 0;
+}
+.third__first__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.third__second {
+  padding: 5rem 0;
+}
+.third__second__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.third__second__item h2 {
+  font-size: 5rem;
+  color: hsl(294, 54%, 27%);
+}
+.third__second__item p {
+  font-size: 1.3rem;
+  max-width: 15rem;
+}
+@media screen and (min-width: 940px) {
+  .third__first h3 {
+    font-size: 4.5rem;
+  }
+  .third__first p {
+    font-weight: 600;
+  }
+  .third__first__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .third__second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25rem;
+  }
+  .third__second__item h2 {
+    font-size: 6rem;
   }
 }/*# sourceMappingURL=main.css.map */

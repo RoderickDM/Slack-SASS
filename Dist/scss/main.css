@@ -1158,17 +1158,54 @@ body {
   border-top-right-radius: 10rem;
   border-bottom-right-radius: 10rem;
 }
-.fourth__text h4 {
+.fourth__text {
   padding: 2rem;
+}
+.fourth__text h4 {
   font-size: 2rem;
+  font-weight: 100;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 .fourth__text span {
   font-weight: 550;
 }
 .fourth__text a {
+  font-size: 1.8rem;
   color: hsl(206.07, 52.59%, 45.49%);
 }
-.fourth__text p:last-child {
-  font-size: 1.2rem;
+.fourth__text p {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.fourth p:last-child {
+  text-align: center;
+  opacity: 70%;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 940px) {
+  .fourth .container {
+    max-width: 160rem;
+  }
+  .fourth__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  .fourth__wrapper video {
+    width: 90rem;
+    height: 40rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-right-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+  }
+  .fourth__text {
+    max-width: 73rem;
+  }
+  .fourth__text h4 {
+    font-size: 2.6rem;
+  }
 }/*# sourceMappingURL=main.css.map */

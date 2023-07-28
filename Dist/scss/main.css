@@ -20,7 +20,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-family: "Raleway", sans-serif;
-  height: 10000px;
 }
 
 .container {
@@ -1207,5 +1206,59 @@ body {
   }
   .fourth__text h4 {
     font-size: 2.6rem;
+  }
+}
+
+.footer__left ul li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+.footer__left ul li a {
+  color: hsl(0, 0%, 0%);
+}
+.footer__left .modal {
+  padding: 2rem;
+  overflow-y: auto;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: hsl(0, 0%, 100%);
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.footer__left .modal.active {
+  display: block;
+}
+.footer__left .modal button {
+  float: right;
+  background: transparent;
+  border: 0 solid transparent;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 940px) {
+  .footer__wrapper {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .footer__left ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .footer__left ul li a {
+    font-size: 1.7rem;
+  }
+  .footer .modal {
+    border: 1px solid black;
+    max-width: 72rem;
+    height: auto;
+    margin: 0 auto;
+    bottom: 15rem;
   }
 }/*# sourceMappingURL=main.css.map */

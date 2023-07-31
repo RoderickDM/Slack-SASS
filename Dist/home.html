@@ -6,8 +6,10 @@
     <title>Slack | Home</title>
     <link rel="stylesheet" href="./scss/main.css">
     <script src="https://kit.fontawesome.com/3b38699021.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
+  <div id="overlay"></div>
     <header class="header">
             <div class="container">
               <div class="header__wrapper">
@@ -180,6 +182,70 @@
       </div>
     </section>
 
+  <section class="work">
+    <div class="container">
+      <div class="work__wrapper">
+        <h3>Take a deeper dive into a new way to work</h3>
+        <div class="slider">
+          <div class="card">
+            <div class="slider__item">
+              <img src="./img/promo-state-of-work.jpg" alt="">
+              <div class="slider__content">
+                <h5>Customer Story</h5>
+                <p>The next big thing</p>
+                <div class="slider__actions">
+                  <a href="">Read more</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="slider__item">
+              <img src="./img/promo-state-of-work.jpg" alt="">
+              <div class="slider__content">
+                <h5>Customer Story</h5>
+                <p>The next big thing</p>
+                <div class="slider__actions">
+                  <a href="">Read more</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="slider__item">
+              <img src="./img/promo-state-of-work.jpg" alt="">
+              <div class="slider__content">
+                <h5>Customer Story</h5>
+                <p>The next big thing</p>
+                <div class="slider__actions">
+                  <a href="">Read more</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card">
+            <div class="slider__item">
+              <img src="./img/promo-state-of-work.jpg" alt="">
+              <div class="slider__content">
+                <h5>Customer Story</h5>
+                <p>The next big thing</p>
+                <div class="slider__actions">
+                  <a href="">Read more</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -196,6 +262,13 @@
                 <div class="modal" onfocusout="closeModal">
                   <button id="closeModal">X</button>
                   <h2>Change Region</h2>
+                  <p>Selecting a different region wil change the language and content of slack.com.</p>
+                  <ul>
+                    <span>Americas</span>
+                    <li><a href="">Latinoamérica (español)</a></li>
+                    <li><a href="">Brasil (português)</a></li>
+                    <li><a href="">United States (English)</a></li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -205,6 +278,7 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../Dist/js/script.js"></script>
 </body>
 </html>

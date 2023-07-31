@@ -1209,6 +1209,75 @@ body {
   }
 }
 
+.work {
+  background: hsl(34, 42%, 93%);
+}
+.work h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.work .slider__item {
+  height: 40rem;
+  width: 25rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.work .slider__item:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.work .slider__item h5 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding-bottom: 2rem;
+}
+.work .slider__item img {
+  width: 100%;
+}
+.work .slider__item .slider__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work .tns-controls,
+.work button[data-action=stop] {
+  display: none;
+}
+.work .tns-nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.work .tns-nav button {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  justify-content: center;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+.work .tns-nav button:hover,
+.work .tns-nav button.tns-nav-active {
+  position: relative;
+  transition: 0.5s ease-in-out;
+  background: hsl(294, 54%, 27%);
+}
+.work .tns-nav button:hover::before,
+.work .tns-nav button.tns-nav-active:before {
+  content: "";
+  position: absolute;
+  padding: 1rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  border-radius: 50%;
+  border: 1px dashed hsl(294, 54%, 27%);
+}
+
 .footer__left ul li {
   font-size: 1.4rem;
   font-weight: bold;
@@ -1261,4 +1330,22 @@ body {
     margin: 0 auto;
     bottom: 15rem;
   }
+}
+
+/*----FOOTER----*/
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.75;
+}
+#overlay.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

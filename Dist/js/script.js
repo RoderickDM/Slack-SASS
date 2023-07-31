@@ -26,20 +26,34 @@ window.addEventListener("scroll", () => {
 const modal = document.querySelector('.modal');
 const btnRegion = document.querySelector('.region');
 const btnClose = document.querySelector('#closeModal');
-btnRegion.addEventListener('click',()=>{
-    btnRegion.classList.toggle('active')
-    btnRegion.nextElementSibling.classList.toggle('active')
-})
+const overlay = document.querySelector('#overlay');
 
 const openModal = () =>{
     btnRegion.classList.toggle('active')
     btnRegion.nextElementSibling.classList.toggle('active')
+    overlay.classList.toggle('active');
 }
 
 const closeModal = () =>{
     modal.classList.toggle('active');
     btnRegion.classList.toggle('active')
+    overlay.classList.toggle('active');
 }
 
+var slider = tns({
+    container: '.slider',
+    items: 1,
+    slideBy: 'page',
+    mouseDrag: true,
+    autoplay:false,
+    navPosition: "bottom",
+    responsive:{
+        900: {
+            items:4
+        }
+    }
+})
+
+overlay.addEventListener('click',closeModal);
 btnClose.addEventListener('click',closeModal);
 btnRegion.addEventListener('click',openModal);

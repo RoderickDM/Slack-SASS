@@ -67,6 +67,36 @@
             border: 1px solid $clr-light;
           }
         }
+        &--dprimary{
+          background: $clr-dprimary;
+          color: $clr-light;
+          border: 1px solid $clr-light;
+          transition: .5s ease;
+          &::before{
+            content: "";
+            width: 0%;
+            height: 100%;
+            background-color: $clr-light;
+            transform-origin: left;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .5s ease;
+            z-index: -1;
+            border-radius: 1rem;
+          }
+          &:hover::before{
+            width: 100%;
+            transition: .5s ease;
+          }
+          &:hover{
+            color: $clr-primary;
+            z-index: 999;
+            transition: .5s ease;
+            border: 1px solid $clr-dprimary;
+          }
+        }
         
       }
     }
